@@ -45,6 +45,7 @@ imgList.forEach((img) => {
   };
 });
 
+
 // 모달 닫기 버튼 클릭 시 모달 창 닫기
 document
   .getElementById("closeModalButton")
@@ -70,12 +71,12 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   function toggleProjects(className) {
-    const projects = document.querySelectorAll(".projects-thumb");
+    const projects = document.querySelectorAll(".projects-thumb.main");
     projects.forEach((project) => {
       if (className === "all" || project.classList.contains(className)) {
         project.style.display = "block";
       } else {
-        project.style.display = "none";
+        project.style.display = "none"; 
       }
     });
   }
