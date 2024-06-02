@@ -55,6 +55,7 @@ document
 
 document.addEventListener("DOMContentLoaded", function () {
   const springButton = document.getElementById("springButton");
+  const RPAButton = document.getElementById("RPAButton");
   const mernButton = document.getElementById("mernButton");
   const allButton = document.getElementById("allButton");
 
@@ -64,6 +65,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   mernButton.addEventListener("click", function () {
     toggleProjects("mern");
+  });
+  RPAButton.addEventListener("click", function () {
+    toggleProjects("RPA");
   });
 
   allButton.addEventListener("click", function () {
